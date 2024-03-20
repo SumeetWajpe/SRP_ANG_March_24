@@ -31,7 +31,8 @@ var Car = /** @class */ (function () {
         this.speed = speed;
     }
     Car.prototype.accelerate = function () {
-        return "The car " + this.name + " is running @ " + this.speed + " kmph !";
+        // return "The car " + this.name + " is running @ " + this.speed + " kmph !";
+        return "The car ".concat(this.name, " is running @ ").concat(this.speed, " kmph !");
     };
     return Car;
 }());
@@ -52,3 +53,35 @@ var JamesBondCar = /** @class */ (function (_super) {
 }(Car));
 var jbc = new JamesBondCar("Aston Martin", 300, true);
 // console.log(jbc.accelerate());
+// interface IPerson {
+//   name: string;
+//   country?: string;
+//   getDetails?: () => void;
+// }
+// class Person implements IPerson {
+//   name: string;
+// }
+var EnhancedCar = /** @class */ (function () {
+    function EnhancedCar(name, speed) {
+        if (name === void 0) { name = "BMW"; }
+        if (speed === void 0) { speed = 200; }
+        this.name = name;
+        this.speed = speed;
+    }
+    return EnhancedCar;
+}());
+var eCarObj = new EnhancedCar();
+var cars = new Array("BMW", "AUDI", "FERRARI"); // Using Generics
+function Swap(x, y) {
+    var t;
+    t = x;
+    x = y;
+    y = t;
+}
+Swap("Hello ", "World");
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    return Point;
+}());
+var point = new Point();
