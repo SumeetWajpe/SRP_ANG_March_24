@@ -20,7 +20,19 @@ a = {};
 // var result: number = Add(20, 30);
 // Add();// Error ! Parameters are not optional
 // Optional Parameters
-function PrintBook(author, title, noOfPages) {
-    console.log(author, title, noOfPages);
+// function PrintBook(author: string, title?: string, noOfPages?: number): void {
+//   console.log(author, title, noOfPages);
+// }
+// PrintBook("Dr. APJ Abdul Kalam", "", 200);
+// Default Parameters
+function PrintBook(author, title) {
+    if (author === void 0) { author = "Unknown"; }
+    if (title === void 0) { title = "Unknown"; }
+    console.log(author, title);
 }
-PrintBook("Dr. APJ Abdul Kalam", "", 200);
+PrintBook();
+PrintBook("Dr. APJ Abdul Kalam", "Wings Of Fire");
+// Arrays
+// let cars: string[] = ["BMW", "AUDI", "FERRARI"];
+// OR
+var cars = new Array(); // Using Generics
