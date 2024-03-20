@@ -35,4 +35,16 @@ PrintBook("Dr. APJ Abdul Kalam", "Wings Of Fire");
 // Arrays
 // let cars: string[] = ["BMW", "AUDI", "FERRARI"];
 // OR
-var cars = new Array(); // Using Generics
+// let cars: Array<string> = new Array<string>("BMW", "AUDI", "FERRARI"); // Using Generics
+// let firstCar = cars[0];
+// let secondCar = cars[1];
+// destructuring
+var cars = ["BMW", "AUDI", "FERRARI"];
+var firstCar = cars[0], secondCar = cars[2];
+console.log(secondCar);
+// With Objects
+var player = { lname: "Alcaraz", isSeededOne: true, country: "Spain" };
+// let lname: string = player.lname;
+// let country: string = player.country;
+// OR
+var lname = player.lname, country = player.country;
