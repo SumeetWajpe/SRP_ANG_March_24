@@ -33,15 +33,15 @@ a = {};
 // PrintBook("Dr. APJ Abdul Kalam", "", 200);
 
 // Default Parameters
-function PrintBook(
-  author: string = "Unknown",
-  title: string = "Unknown",
-): void {
-  console.log(author, title);
-}
+// function PrintBook(
+//   author: string = "Unknown",
+//   title: string = "Unknown",
+// ): void {
+//   console.log(author, title);
+// }
 
-PrintBook();
-PrintBook("Dr. APJ Abdul Kalam", "Wings Of Fire");
+// PrintBook();
+// PrintBook("Dr. APJ Abdul Kalam", "Wings Of Fire");
 
 // Arrays
 
@@ -53,14 +53,31 @@ PrintBook("Dr. APJ Abdul Kalam", "Wings Of Fire");
 // let firstCar = cars[0];
 // let secondCar = cars[1];
 // destructuring
-let cars: string[] = ["BMW", "AUDI", "FERRARI"];
+// let cars: string[] = ["BMW", "AUDI", "FERRARI"];
 
-let [firstCar, , secondCar] = cars;
-console.log(secondCar);
+// let [firstCar, , secondCar] = cars;
+// console.log(secondCar);
 
 // With Objects
-let player = { lname: "Alcaraz", isSeededOne: true, country: "Spain" };
+// let player = { lname: "Alcaraz", isSeededOne: true, country: "Spain" };
 // let lname: string = player.lname;
 // let country: string = player.country;
 // OR
-let { lname, country } = player;
+// let { lname, country } = player;
+
+// function PrintPlayer({ lname, country }) {
+//   console.log(lname + " represents " + country);
+// }
+
+// PrintPlayer(player);
+// console.log(player.lname);
+
+// Spread Operator
+let cars: string[] = ["BMW", "AUDI"];
+let moreCars: string[] = ["TATA", "MAHINDRA"];
+let allCars: string[] = [...cars, ...moreCars];
+console.log(allCars);
+
+// Spread Operator with Objects
+let person = { name: "Djokovic", country: "Spain" };
+let player = { ...person, sport: "Tennis" };
