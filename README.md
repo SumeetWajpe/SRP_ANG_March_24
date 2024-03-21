@@ -8,3 +8,11 @@ npm install -D typescript -g
 
 # Checking Version of typescript 
 tsc -v
+
+# Angular Commands
+
+-> npm i @angular/cli -g
+-> ng new firstangularapp --no-standalone
+    -> CSS
+    -> SSR or SSG - (N)
+-> npm start

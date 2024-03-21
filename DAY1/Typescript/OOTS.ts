@@ -68,9 +68,16 @@ function Swap<T>(x: T, y: T) {
 
 Swap<string>("Hello ", "World");
 
-class Point<T,V> {
+class Point<T, V> {
   x: T;
   y: V;
 }
 
-var point: Point<number,string> = new Point<number,string>();
+var point: Point<number, string> = new Point<number, string>();
+
+let x: number = 100;
+// x = "XYZ";
+
+function Test(a){
+
+}

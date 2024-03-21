@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "target": "ES6",
+    "noImplicitAny": true
+  },
+  "files": ["OOTS.ts"]
+}
