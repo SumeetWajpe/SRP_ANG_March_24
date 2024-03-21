@@ -1,4 +1,6 @@
-<message [msgdetails]="firstMsg"></message>
+<div *ngFor="let m of messages">
+  <message [msgdetails]="m"></message>
+</div>
 <!-- <message
   msg="Hola"
   from="Bil"

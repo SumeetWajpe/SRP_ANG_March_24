@@ -1,0 +1,21 @@
+<div [ngClass]="{ card: true, selected: isAddedToCart }">
+  <img
+    [src]="productdetails.imageUrl"
+    class="card-img-top"
+    width="350px"
+    height="200px"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ productdetails.title }}</h5>
+    <p class="card-text">₹. {{ productdetails.price }}</p>
+    <p class="card-text">{{ productdetails.rating }}</p>
+    <button class="btn btn-primary m-2" (click)="IncrementLikes()">
+      {{ productdetails.likes }} <i class="fa-solid fa-thumbs-up"></i>
+    </button>
+
+    <input type="checkbox" [(ngModel)]="isAddedToCart" id="chkAddToCart" />
+
+    <label for="chkAddToCart">Add to Cart</label>
+  </div>
+</div>

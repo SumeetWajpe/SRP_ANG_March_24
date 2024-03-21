@@ -8,10 +8,24 @@ import { MessageModel } from '../models/message.model';
 })
 export class AppComponent {
   title = 'firstangularapp';
-  firstMsg: MessageModel = new MessageModel(
-    'Hey',
-    'John',
-    'Carter',
-    'https://upload.wikimedia.org/wikipedia/commons/3/33/Hey_2018_logo.svg'
-  );
+  messages: MessageModel[] = [
+    new MessageModel(
+      'Hey',
+      'John',
+      'Carter',
+      'https://upload.wikimedia.org/wikipedia/commons/3/33/Hey_2018_logo.svg'
+    ),
+    new MessageModel(
+      'Hello',
+      'John',
+      'Carter',
+      'https://upload.wikimedia.org/wikipedia/commons/3/33/Hey_2018_logo.svg'
+    ),
+    new MessageModel(
+      'Hi',
+      'John',
+      'Carter',
+      'https://upload.wikimedia.org/wikipedia/commons/3/33/Hey_2018_logo.svg'
+    ),
+  ];
 }
