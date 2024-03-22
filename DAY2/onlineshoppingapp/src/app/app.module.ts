@@ -7,11 +7,23 @@ import { ListOfProducts } from './components/listofproducts/listofproduct.compon
 import { Product } from './components/product/product.component';
 import { TwowaybindComponent } from './components/twowaybind/twowaybind.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RatingComponent } from './components/rating/rating.component';
+import { ProductService } from './service/products.service';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostsService } from './service/posts.service';
 
 @NgModule({
-  declarations: [AppComponent, ListOfProducts, Product, TwowaybindComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  declarations: [
+    AppComponent,
+    ListOfProducts,
+    Product,
+    TwowaybindComponent,
+    RatingComponent,
+    PostsComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  providers: [ProductService, PostsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -8,8 +8,9 @@
   />
   <div class="card-body">
     <h5 class="card-title">{{ productdetails.title }}</h5>
+    <app-rating [noofstars]="productdetails.rating"></app-rating>
     <p class="card-text">₹. {{ productdetails.price }}</p>
-    <p class="card-text">{{ productdetails.rating }}</p>
+
     <button class="btn btn-primary m-2" (click)="IncrementLikes()">
       {{ productdetails.likes }} <i class="fa-solid fa-thumbs-up"></i>
     </button>
