@@ -1,5 +1,5 @@
 <div [ngClass]="{ card: true, selected: isAddedToCart }">
-  <a routerLink="/productdetails">
+  <a routerLink="{{ 'productdetails/' + productdetails.id }}">
     <img
       [src]="productdetails.imageUrl"
       class="card-img-top"
