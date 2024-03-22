@@ -1,11 +1,13 @@
 <div [ngClass]="{ card: true, selected: isAddedToCart }">
-  <img
-    [src]="productdetails.imageUrl"
-    class="card-img-top"
-    width="350px"
-    height="200px"
-    alt="..."
-  />
+  <a routerLink="/productdetails">
+    <img
+      [src]="productdetails.imageUrl"
+      class="card-img-top"
+      width="350px"
+      height="200px"
+      alt="..."
+    />
+  </a>
   <div class="card-body">
     <h5 class="card-title">{{ productdetails.title }}</h5>
     <app-rating [noofstars]="productdetails.rating"></app-rating>

@@ -12,6 +12,9 @@ import { RatingComponent } from './components/rating/rating.component';
 import { ProductService } from './service/products.service';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostsService } from './service/posts.service';
+import { ErrorComponent } from './components/error/error.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { PostsService } from './service/posts.service';
     TwowaybindComponent,
     RatingComponent,
     PostsComponent,
+    ErrorComponent,
+    NavBarComponent,
+    ProductDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [ProductService, PostsService],
