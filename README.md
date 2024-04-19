@@ -20,3 +20,6 @@ tsc -v
 # Codeshare Url
 
 https://codeshare.io/4Ygngb
+
+# json server command to run
+json-server --watch src/db/products.json --port 3500

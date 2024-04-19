@@ -10,6 +10,8 @@ export class ListOfProducts implements OnInit {
   products: ProductModel[] = [];
   constructor(public srvObj: ProductService) {}
   ngOnInit(): void {
-    this.products = this.srvObj.getAllProducts();
+    this.srvObj.getAllProducts().subscribe((response: any) => {
+      this.products = response;
+    });
   }
 }

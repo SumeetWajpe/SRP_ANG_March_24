@@ -1,9 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { ProductModel } from '../models/product.model';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class ProductService {
   products: ProductModel[] = [];
 
-  getAllProducts(): ProductModel[] {
-    return this.products;
+  constructor(public httpClient: HttpClient) {}
+
+  getAllProducts() {
+    return this.httpClient.get<ProductModel[]>(
+      'http://localhost:3500/products'
+    );
   }
 }
