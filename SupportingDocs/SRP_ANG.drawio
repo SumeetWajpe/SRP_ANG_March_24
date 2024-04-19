@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-19T09:25:10.358Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="yC6vkYKbiDLz_aljRocE" version="24.2.5" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-19T10:57:44.493Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="45nV29KwMZ34fRy-xTWR" version="24.2.5" type="device">
   <diagram name="Page-1" id="HDuXw-QlhJ11YC1dcPAw">
-    <mxGraphModel dx="1456" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFF2CC" math="0" shadow="0">
+    <mxGraphModel dx="1368" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFF2CC" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -161,7 +161,7 @@
         <mxCell id="70ixarAjrziTrbDq58aA-1" value="store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="-770" y="1210" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="70ixarAjrziTrbDq58aA-2" value="count = 0" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+        <mxCell id="70ixarAjrziTrbDq58aA-2" value="products[]" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="-555" y="1195" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="70ixarAjrziTrbDq58aA-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="70ixarAjrziTrbDq58aA-4" target="70ixarAjrziTrbDq58aA-5">
@@ -170,7 +170,7 @@
         <mxCell id="70ixarAjrziTrbDq58aA-4" value="actions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="-770" y="1290" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="70ixarAjrziTrbDq58aA-5" value="incrementCount&lt;div&gt;decrementCount&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+        <mxCell id="70ixarAjrziTrbDq58aA-5" value="incrementLikes&lt;div&gt;addProduct&lt;/div&gt;&lt;div&gt;deleteProduct&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
           <mxGeometry x="-555" y="1275" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="70ixarAjrziTrbDq58aA-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="70ixarAjrziTrbDq58aA-7" target="70ixarAjrziTrbDq58aA-8">
