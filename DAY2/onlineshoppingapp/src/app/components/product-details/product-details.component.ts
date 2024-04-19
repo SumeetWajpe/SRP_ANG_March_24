@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../../service/products.service';
 import { ProductModel } from '../../models/product.model';
 
@@ -11,7 +11,11 @@ import { ProductModel } from '../../models/product.model';
 export class ProductDetailsComponent implements OnInit {
   id: number = 0;
   theProduct: ProductModel = new ProductModel(0, '', 0, 0, 0, '', '');
-  constructor(public route: ActivatedRoute, public srvObj: ProductService) {}
+  constructor(
+    public route: ActivatedRoute,
+    public router: Router,
+    public srvObj: ProductService
+  ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((r: any) => {
@@ -22,5 +26,16 @@ export class ProductDetailsComponent implements OnInit {
           this.theProduct = response;
         });
     });
+  }
+
+  DeleteProductById(): void {
+    this.srvObj
+      .deleteProductById(this.id)
+      .subscribe((response: ProductModel) => {
+        if (response) {
+          // console.log(`${response.title} deleted successfully !`);
+          this.router.navigateByUrl('/');
+        }
+      });
   }
 }

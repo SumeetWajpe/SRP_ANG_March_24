@@ -19,4 +19,10 @@ export class ProductService {
       `http://localhost:3500/products/${id}`
     );
   }
+
+  deleteProductById(id: number) {
+    return this.httpClient.delete<ProductModel>(
+      `http://localhost:3500/products/${id}`
+    );
+  }
 }
