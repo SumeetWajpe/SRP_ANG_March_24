@@ -13,4 +13,10 @@ export class ProductService {
       'http://localhost:3500/products'
     );
   }
+
+  getProductById(id: number) {
+    return this.httpClient.get<ProductModel>(
+      `http://localhost:3500/products/${id}`
+    );
+  }
 }
