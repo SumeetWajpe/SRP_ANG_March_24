@@ -1,1 +1,13 @@
-<p>product-details works for {{ theProduct.title }}</p>
+<div class="row">
+  <div class="col-md-9">
+    <img [src]="theProduct.imageUrl" [alt]="theProduct.title" width="100%" />
+  </div>
+  <div class="col-md-3">
+    <h2>{{ theProduct.title }}</h2>
+    <h4>₹. {{ theProduct.price }}</h4>
+    <button class="btn btn-primary m-2">
+      {{ theProduct.likes }} <i class="fa-solid fa-thumbs-up"></i>
+    </button>
+    <p>{{ theProduct.description }}</p>
+  </div>
+</div>

@@ -10,7 +10,7 @@ import { ProductModel } from '../../models/product.model';
 })
 export class ProductDetailsComponent implements OnInit {
   id: number = 0;
-  theProduct: ProductModel = new ProductModel(0, '', 0, 0, 0, '');
+  theProduct: ProductModel = new ProductModel(0, '', 0, 0, 0, '', '');
   constructor(public route: ActivatedRoute, public srvObj: ProductService) {}
 
   ngOnInit(): void {

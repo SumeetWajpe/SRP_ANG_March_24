@@ -7,7 +7,15 @@ import { ProductModel } from '../../models/product.model';
   styleUrl: './product.component.css',
 })
 export class Product {
-  @Input() productdetails: ProductModel = new ProductModel(0, '', 0, 0, 0, '');
+  @Input() productdetails: ProductModel = new ProductModel(
+    0,
+    '',
+    0,
+    0,
+    0,
+    '',
+    ''
+  );
   isAddedToCart: boolean = false;
   IncrementLikes(): void {
     this.productdetails.likes++;
