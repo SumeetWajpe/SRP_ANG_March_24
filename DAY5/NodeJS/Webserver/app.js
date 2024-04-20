@@ -4,7 +4,7 @@ const hostname = "127.0.0.1";
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  if (req.url == "/") {
+  if (req.url == "/"  && req.method == "GET") {
     fs.readFile("Index.html", (err, data) => {
       if (!err) {
         res.statusCode = 200;
@@ -24,6 +24,12 @@ const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "application/json");
     res.statusCode = 200;
     res.end(JSON.stringify(products));
+  } else if (req.url == "/script.js") {
+    fs.readFile("script.js", (err, data) => {
+      res.setHeader("Content-Type", "text/javascript");
+      res.statusCode = 200;
+      res.end(data);
+    });
   } else {
     res.statusCode = 404;
     res.end("Resource not found !");
