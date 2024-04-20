@@ -54,10 +54,16 @@ export const initialState = [
 
 export const productsReducer = createReducer(
   initialState,
-  on(incrementLikes, (state) => {
-    console.log(state);
+  on(incrementLikes, (state, action) => {
+    console.log(state, action);
     // biz logic
-    return state;
+    let id = action.payload;
+    let index = state.findIndex((p) => p.id == id);
+    return [
+      ...state.slice(0, index),
+      { ...state[index], likes: state[index].likes + 1 },
+      ...state.slice(index + 1),
+    ];
   })
   //   on(decrementCount, (state) => state - 1)
 );

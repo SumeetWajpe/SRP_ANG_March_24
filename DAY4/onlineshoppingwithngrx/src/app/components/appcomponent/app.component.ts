@@ -7,8 +7,5 @@ import { Store } from '@ngrx/store';
 })
 export class AppComponent {
   title = 'onlineshoppingwithngrx';
-  _products: any;
-  constructor(public store: Store<{ products: any }>) {
-    this._products = this.store.select('products');
-  }
+ 
 }

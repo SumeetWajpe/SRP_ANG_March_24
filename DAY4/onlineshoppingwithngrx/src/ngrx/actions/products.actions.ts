@@ -1,7 +1,10 @@
-import { createAction } from '@ngrx/store';
+import { createAction, props } from '@ngrx/store';
 
 export const incrementLikes = createAction(
-  '[App-Products-Component] IncrementLikes'
+  '[App-Products-Component] IncrementLikes',
+  (id) => {
+    return { payload: id };
+  }
 );
 export const addProduct = createAction('[App-Products-Component] AddProduct');
 export const deleteProduct = createAction(
