@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-03T06:11:01.615Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="AGggTA_1vq2XnTTptj_e" version="24.3.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-03T11:11:13.503Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="HnnOC_a9y05H6Ln4BGxa" version="24.3.1" type="device">
   <diagram name="Page-1" id="HDuXw-QlhJ11YC1dcPAw">
     <mxGraphModel dx="7436" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFF2CC" math="0" shadow="0">
       <root>
@@ -504,6 +504,12 @@
         </mxCell>
         <mxCell id="gSGFPPf_8N2eM0KzgUbJ-70" value="Output Binding" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.mail;" vertex="1" parent="gSGFPPf_8N2eM0KzgUbJ-62">
           <mxGeometry x="450" y="166.75" width="30" height="16.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gSGFPPf_8N2eM0KzgUbJ-72" value="/products" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="-4280" y="1420" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gSGFPPf_8N2eM0KzgUbJ-73" value="/productdetails/1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="-4240" y="1510" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
